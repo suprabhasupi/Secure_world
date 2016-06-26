@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CONTACT</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/new_css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/full-slider.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- --------------------------header------------------------------------------- -->
+    <div class="container col-md-12 col-sm-12 col-xs-12 about_main_page">
+        <div class="container col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12 main_header_homepgae">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <img src="images/about/logo_inner.png" class="inner_logo
+">
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="homepage.html"><img src="images/about/image2.png">
+                                </a>
+                            </li>
+                            <li> <a href="about.html" class="nav_tab"><span class="menu_homepage source_semibold active_menu">ABOUT SECURE WORLD</span></a></li>
+                            <li><a href="#" class="nav_tab"><span class="menu_homepage source_semibold">PRODUCT WE OFFER</span></a></li>
+                            <li><a href="#" class="nav_tab"><span class="menu_homepage source_semibold">SHOP HERE</span></a></li>
+                            <li><a href="#" class="nav_tab"><span class="menu_homepage source_semibold">CONTACT SECURE WORLD</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -------------------button cart------------------------------- -->
+                <div class="col-md-1 col-sm- col-xs-1 homepage_button_cart_position
+">
+                    <div class="button_homepage_shopping">
+                        <img src="images/homepage/cart_icon.png" class="homepage_icon_cart">
+                        <span class="hompag_cart_content source_bold">CART</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------header end------------------------------------- -->
+    <!-- -------------------------breadcrumb---------------------------------------------------- -->
+    <div class="container col-md-12 col-sm-12 col-xs-12 about_breaadcrumb_main">
+        <div class="container col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12 about_breadcrumb_font source_semibold">
+                <ol class="breadcrumb">
+                    <li><a href="#">CONTACT SECURE WORLD</a></li>
+                    <!--  <li><a href="#">SELF DEFENCE</a></li>
+                    <li class="active">STUNGUN</li> -->
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- ----------end breadcumb-------------------------- -->
+    <div class="container col-md-12 col-sm-12 col-xs-12 contact_main_page">
+        <div class="container col-md-12 col-sm-12 col-xs-12 contact_main_page2">
+            <div class="col-md-7 col-sm-7 col-xs-12">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div class="mp" style='overflow:hidden;height:416px;width:100%;'>
+                    <!-- <div id='gmap_canvas' style='height:530px;width:1336px;'></div>  -->
+                    <div id='gmap_canvas' style='height:530px;width:100%;'></div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-8 col-sm-8 col-xs-8">
+                        </div>
+                        <div class="col-md-4 ">
+                            <!-- <img src="images/teclever_contact/fb.png" class="pull-right"> -->
+                        </div>
+                    </div>
+                    <div><small><a href="http://embedgooglemaps.com">      embed google maps  </a></small></div>
+                    <div><small><a href="https://termsofusegenerator.net">terms of use example</a></small></div>
+                    <style>
+                    #gmap_canvas img {
+                        max-width: none!important;
+                        background: none!important
+                    }
+                    </style>
+                </div>
+                <script type='text/javascript'>
+                function init_map() {
+                    var myOptions = {
+                        zoom: 15,
+                        center: new google.maps.LatLng(12.9576026, 77.5908149),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        disableDefaultUI: true
+                    };
+                    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(12.9576026, 77.5908149)
+                    });
+                    infowindow = new google.maps.InfoWindow({
+                        content: '<strong>SECURE WORLD</strong><br>108 KH ROAD, Bangalore<br>'
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                }
+                google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-12 contact_rit_cont">
+                <h3 class="contact_right_head">SECURE WORLD</h3>
+                <p class="contact_right_inner_cont">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese</p>
+            </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-md-6 col-sm-12 conatct_scnd_row_left">
+                <div class="col-md-4 col-sm-4"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <img src="images/contact/home_icon.png">
+                    <p class="source_regular conatct_scnd_row_left1"> 1 FLOOR, ( ABOVE RELIANCE WEB WORLD )
+                        <br>108 K.H.Road,
+                        <br>Bangalore - 560 027
+                        <br>Ph : 656 12345 / 6561 5761
+                        <br>Mobile : 9886345769</p>
+                    <p class="source_regular conatct_scnd_row_left1">
+                        Junction of 80ft road and 12th Main road,
+                        <br> Indiranagar, HAL III Stage,
+                        <br> Bangalore - 560 075
+                        <br> Ph : 6537 5536 / 37
+                        <br> Mobile : 98863 49622
+                    </p>
+                    <p class="source_regular conatct_scnd_row_left1">
+                        160/2, Between East Park Road and Sampige Road,
+                        <br> Malleshwaram, 15th Cross,
+                        <br> Bangalore - 560 003
+                        <br> Ph. : 98863 49625 / 27
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-6 col-sm-12">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

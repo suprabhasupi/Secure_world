@@ -93,3 +93,11 @@
 .source_black{
     font-family:source_black;
 }
+
+@font-face {
+        font-family:source_it;
+        src: url(font/SourceSansPro-It.otf);
+}
+.source_it{
+    font-family:source_it;
+}

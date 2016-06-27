@@ -26,6 +26,12 @@ img.main_logo{
 	background-color: #46becc;
 	color:white;
 	margin-top: 1.5em;
+	 
+}
+
+.button_hompge_md2
+{
+	   margin-left: 1.3em;
 }
 
 span.hompag_shopnow_content{
@@ -82,13 +88,17 @@ span.hompag_cart_content{
 }
 
 .carousel-control .icon-prev{
-	left:18%;
+	left: 30%;
 	top:80%;
+	font-size: 3.5em;
+	color: #46becc;
 }
 
 .carousel-control .icon-next{
-	right:18%;
+	right: 37%;
 	top:80%;
+	font-size: 3.5em;
+	color: #46becc;
 }
 .homapge_first_slider{
 margin-top: 4.5em;
@@ -122,6 +132,21 @@ p.homepage_overly_content{
 
 .homepage_first_ovrlay_image{
 	margin-left: -.8%;
+}
+
+.carousel-indicators li{
+	width: 8px;
+    height: 8px;
+    margin: 3px;
+}
+.carousel-indicators .active{
+	background: #46becc;
+	border-color: #46becc;
+}
+
+.homepage_overlaty_content{
+	    margin-top: 17.6em;
+    margin-left: 3%;
 }
 /*----------------------------------second row-----------------------------------*/
 
@@ -256,9 +281,32 @@ margin-left: -.25%;
     -ms-transition: opacity 0.4s ease-in-out;
     transition: opacity 0.4s ease-in-out;
 }
+
+.overlay1 {
+    position: absolute;
+    width: 89%;
+    height: 100%;
+    top: 0;
+    /*left: 0;*/
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
 .hompag_scnd_slide_overlay:hover > .overlay {
     opacity: 1;
     width: 85%;
+    display: block;
+    /*margin-left: 17px;*/
+    background: rgba(42, 41, 39, 0.44);
+}
+
+.hompag_scnd_slide_overlay:hover > .overlay1 {
+    opacity: 1;
+    width: 89%;
     display: block;
     /*margin-left: 17px;*/
     background: rgba(42, 41, 39, 0.44);
@@ -584,10 +632,10 @@ td.comar_column_frst{
 }
 
 td.compar_row_frst{
-	padding: 9.1em 4.3em 2em 3.5em;
+	padding: 7.1em 4.3em 2em 3.5em;
 	position: relative;
-    top: -0.7em;
-    /*font-size: 18px;*/
+	top: -0.7em;
+	font-size: 18px;
 }
 
 img.compare_tbl_cross{
@@ -597,7 +645,7 @@ img.compare_tbl_cross{
     top: 1em;
 }
 
-p.compare_prodct_tabl_img{
+.compare_prodct_tabl_img{
     /*position: relative;
     margin-left: 18%;
     margin-top: 12%;*/
@@ -612,17 +660,18 @@ span.compare_tbl_product_cont{
 
 p.compare_stun_gun_cont{
 	margin-left: 17%;
-    position: relative;
-    top: -2em;
+	/* position: relative; */
+	/* top: -2em; */
+	margin-top: 3.7%;
 }
 
 p.compare_dimensions_cont{
-	    margin-top: 3%;
-	    /*font-size: 18px;*/
+	    margin-top: 1%;
+	    font-size: 18px;
 }
 
 p.comapre_dimension_pro{
-	    padding: .95em 0px;
+	    padding: .99em 0px;
 	    position: relative;
     top: 12px;
 }
@@ -689,6 +738,60 @@ p.conatct_scnd_row_left1{
 	margin-bottom: 1.3em;
 }
 
+.conatct_mail_box
+{
+	width:100%;
+	height:290px;
+	background-color: white;
+	border:1px solid white;
+	padding:0em 2em;
+	position: relative;
+    right: 2.08em;
+}
+
+span#basic-addon1{
+	    border-radius: 1px;
+    background: #606060;
+    /*position: relative;*/
+    font-size: 2em;
+    padding: 0px 10px;
+    /*top: 0px;*/
+}
+
+h3.contact_rit_enquire{
+	color:#c2c2c2;
+}
+
+.button_contact_page{
+width: 118px;
+	height: 36px;
+	background-color: #46becc;
+	color:white;
+	/*font-size: 14px;*/
+	margin-top: 1em;
+	}
+
+	span.conatct_btn_content{
+		color: white;
+		font-size: 18px;
+		    position: relative;
+    left: 1.3em;
+    top: 5px;
+	}
+
+.contact_rit_border{
+	border-right: 1px solid #606060;
+}
+
+.conatct_main_scnd_rw{
+	margin-bottom: 3em;
+}
+
+p.contact_rit_mail{
+	color: #a7a7a7;
+	font-size: 18px;
+
+}
 /*--------------------------------------------------------------faq----------------------------------------*/
 
 .navbar-nav>li>.dropdown-menu {

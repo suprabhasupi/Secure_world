@@ -163,7 +163,7 @@ $(document).ready(function ()
                         <br> Malleshwaram, 15th Cross,
                         <br> Bangalore - 560 003
                         <img src="images/contact/image1.png" class="pull-left contact_lft_icon coloured3">
-                        <!-- <img src="images/contact/image2.png" class="pull-left uncoloured3"> -->
+                        <img src="images/contact/image2.png" class="pull-left uncoloured3">
                         <br> Ph. : 98863 49625 / 27
                     </p>
                 </div>
@@ -247,16 +247,28 @@ $(document).ready(function ()
          $(".contact_left1").click(function(){
             $('.coloured1').css('opacity',0);
             $('.uncoloured1').css('opacity',1);
+             $('.coloured2').css('opacity',1);
+             $('.uncoloured2').css('opacity',0);
+              $('.coloured3').css('opacity',1);
+            $('.uncoloured3').css('opacity',0);
 
          });
           $(".contact_left2").click(function(){
             $('.coloured2').css('opacity',0);
             $('.uncoloured2').css('opacity',1);
+            $('.coloured1').css('opacity',1);
+             $('.uncoloured1').css('opacity',0);
+               $('.coloured3').css('opacity',1);
+            $('.uncoloured3').css('opacity',0);
 
          });
            $(".contact_left3").click(function(){
             $('.coloured3').css('opacity',0);
-            $('.uncoloured').css('opacity',1);
+            $('.uncoloured3').css('opacity',1);
+            $('.coloured1').css('opacity',1);
+            $('.uncoloured1').css('opacity',0);
+             $('.coloured2').css('opacity',1);
+             $('.uncoloured2').css('opacity',0);
 
          });
     }

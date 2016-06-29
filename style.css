@@ -143,6 +143,7 @@ p.homepage_overly_content {
     width: 8px;
     height: 8px;
     margin: 3px;
+    background-color: #46becc;
 }
 
 .carousel-indicators .active {
@@ -153,6 +154,7 @@ p.homepage_overly_content {
 .homepage_overlaty_content {
     margin-top: 17.6em;
     margin-left: 3%;
+    font-size: 14px;
 }
 
 
@@ -843,14 +845,18 @@ img.contact_lft_icon {
     margin-left: 17%;
 }
 
-img.uncoloured1 {
+/*img.uncoloured1 {
     opacity: 0;
+    margin-left: -2em;
+}*/
+
+img.uncoloured2 {
+    opacity: 1;
     margin-left: -2em;
 }
 
-img.uncoloured2 {
+img.coloured2{
     opacity: 0;
-    margin-left: -2em;
 }
 
 img.uncoloured3 {
@@ -1381,7 +1387,7 @@ span.product_ovrlay_cart
 
 .carousel.vertical .item {
     left: 0;
-}Ã¢â‚¬â€¹
+}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â¹
 
 /*Overwriten Bootstrap Classis*/
 .small-thumbnail {
@@ -1490,10 +1496,11 @@ p.faq_inner1{
 /*---------------------------faq toggle box---------------------*/
 
   .slide-out-div {
-          padding: 20px;
+          padding: 0;
           width: 250px;
           background: #ccc;
           border: #29216d 1px solid;
+          display: none;
       }     
 
       .slide-out-div{
@@ -1501,6 +1508,47 @@ p.faq_inner1{
       }
 
 .faq_slide_out_header{
-    border: 1px solid red;
-    /*padding: 1em;*/
+    /* border: 1px solid red; */
+    padding: 13px 4px 3px 4px;
+    background: white;
+    font-size: 14px;
+    color: #868686;
+}
+.slide-out-div.open{
+    padding: 0;
+    height: 372px;
+}
+.product_section{
+    display: none;
+}
+.active_product{
+    display: block;
+}
+
+img.product_box_slide_out{
+    width: 111px;
+    height: 48px;
+}
+
+.product_box{
+    padding: 4em 2em 2em 4em;
+        height: 19em;
+    overflow: auto;
+}
+
+.product_box_1, .product_box_2{
+       border: 1px solid #413d3d;
+    background: white;
+    margin-top: 29px;
+    margin-bottom: 21px;
+}
+
+.product_box_footer{
+   padding: 13px 4px 3px 4px;
+    background: white;
+    font-size: 14px;
+    color: #868686;
+}
+.product_box_1, .product_box_2, .product_box_3, .product_box_4{
+    display: none;
 }

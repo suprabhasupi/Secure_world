@@ -26,6 +26,7 @@ img.main_logo {
     background-color: #46becc;
     color: white;
     margin-top: 1.5em;
+    cursor: pointer;
 }
 
 .button_hompge_md2 {
@@ -122,6 +123,12 @@ span.hompag_cart_content {
 
 p.homepage_overly_content {
     font-size: 14px;
+    color: #c2c2c2;
+}
+
+p.homepage_overlay_cont1
+{
+    font-size: 14px;
 }
 
 .hompage_second_row_overlay {
@@ -153,7 +160,7 @@ p.homepage_overly_content {
 
 .homepage_overlaty_content {
     margin-top: 17.6em;
-    margin-left: 3%;
+    margin-left: 3.5%;
     font-size: 14px;
 }
 
@@ -242,7 +249,16 @@ p.homepag_scndrow_image_icon_content {
 
 
 /*----------------------------third row----------------------*/
-
+p.homepag_main_hd{
+    font-size: 48px;
+    color: #aaaaaa;
+}
+p.homepag_main_inner1{
+    font-size: 14px;
+     color: #aaaaaa;
+     margin-top: -6px;
+     line-height: 21px;
+}
 .homepage_thrd_row_bottom {
     border-bottom: 1px solid #343131;
     margin-top: 2em;
@@ -258,7 +274,8 @@ p.carosel_innner_bottom_homepage_content {
     color: #1f1f1f;
     position: absolute;
     top: -2em;
-    padding: 3.4em;
+    padding: 3.2em;
+    line-height: 21px;
     /* margin-left: 0em; */
 }
 
@@ -325,24 +342,35 @@ ol.hompage_scnd_carousl {
 }
 
 .overlay_content:hover> .overlay_content2 {
-    /*  -webkit-filter: grayscale(1);
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: url(#greyscale);
-  filter: gray;*/
-    -webkit-filter: invert(.9);
-    filter: invert(.9);
+    -webkit-filter: invert(0);
+    filter: invert(0);
+    transition: 1s;
 }
 
+.overlay_content2 {
+    -webkit-filter: invert(.9);
+    filter: invert(.9);
+    }
+
 .overlay_content:hover> .overlay_content1 {
+    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: url(#greyscale);
+    filter: gray;
+    transition: 1s;
+}
+
+
+
+
+.overlay_content1 {
     -webkit-filter: grayscale(1);
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: url(#greyscale);
     filter: gray;
 }
-
-
 /*---------------------------------footer--------------------------------------------*/
 
 .footer_border {
@@ -419,7 +447,13 @@ img.inner_logo {
 .about_us_slider_fullpage {
     background: black;
 }
+p.about_slider_inner1{
+    font-size: 18px;
+}
 
+p.about_slide_headr{
+    font-size: 36px;
+}
 .aboutus_frst_slider {
     background-image: url("images/about/about_bg1.jpg");
     background-repeat: no-repeat;
@@ -442,6 +476,7 @@ p.about_left_main_content {
 p.about_left_inner_content {
     color: #4a4a4a;
     font-size: 18px;
+    line-height: 24px;
 }
 
 .about_scnd_row_both_column {
@@ -491,6 +526,12 @@ img.login_logo_inner {
     top: 11%;
 }
 
+img.login_logo_inner_main1{
+     position: absolute;
+     left: 45%;
+    top:28%;
+
+}
 .login_inner_full_page {
     position: absolute;
     top: 51%;
@@ -521,6 +562,7 @@ span.login_btn {
     left: 1.1em;
     top: 5px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 a.login_frgt_pwd {
@@ -529,6 +571,7 @@ a.login_frgt_pwd {
     position: relative;
     top: 1em;
     color: #d45e9d;
+    cursor: pointer;
 }
 
 a.login_frgt_pwd:hover {
@@ -550,6 +593,7 @@ table.login_tbl {
     position: absolute;
     top: 26%;
     right: 2.5%;
+    cursor: pointer;
 }
 
 
@@ -639,6 +683,7 @@ span.survey_stay_btn {
     left: 1.8em;
     top: 5px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .survey_radio_btn {
@@ -650,10 +695,12 @@ span.survey_stay_btn {
     position: relative;
     left: 2.5em;
     top: 5px;
+    cursor: pointer;
 }
 
 
 /*-------------------------------compare table--------------------------------*/
+
 
 .comapre_tabl_full_tabl_pag {
     background-color: black;
@@ -757,11 +804,10 @@ input.form-control.source_it {
     width: 436px height: 426px;
     position: relative;
     left: -1em;
+     padding: 8.22em 1em;
 }
 
-.contact_rit_cont {
-    padding: 9em 1em;
-}
+
 
 p.contact_right_inner_cont {
     font-size: 18px;
@@ -785,6 +831,7 @@ h3.contact_right_head {
 
 p.conatct_scnd_row_left1 {
     margin-bottom: 1.3em;
+    font-size: 18px;
 }
 
 .conatct_mail_box {
@@ -830,6 +877,7 @@ span.conatct_btn_content {
 
 .contact_rit_border {
     border-right: 1px solid #606060;
+    padding-bottom: 5em;
 }
 
 .conatct_main_scnd_rw {
@@ -845,6 +893,11 @@ img.contact_lft_icon {
     margin-left: 17%;
 }
 
+input[type=text]:focus{
+    font-family: source_regular;
+    color: black;
+
+}
 /*img.uncoloured1 {
     opacity: 0;
     margin-left: -2em;
@@ -953,6 +1006,9 @@ img.uncoloured3 {
     margin-bottom: 3px;
 }
 
+.faq_para_inner2{
+    line-height: 22px;
+}
 
 /*-------------------------------------product page-------------------------*/
 
@@ -1062,13 +1118,14 @@ p.product_mega_menu_img_cont {
 }
 
 p.product_scnd_row_product {
-    margin-bottom: 9%;
+    margin-bottom: 19%;
     font-size: 14px;
     color: #a7a7a7;
 }
 
 .product_imga_content {
     color: #a7a7a7;
+    margin-top: 2%;
 }
 
 span.product_shopnow_butn {
@@ -1305,10 +1362,10 @@ span.product_ovrlay_cart
 
 
 
-.carousel-control-ver {
+/*.carousel-control-ver {
     
     filter: alpha(opacity=50);
-}
+}*/
 
 /* --------- END --------- */
 
@@ -1334,7 +1391,7 @@ span.product_ovrlay_cart
     right: 50%;
     top: auto;
     bottom: 0px;
-    margin-rightight: -19px;
+    margin-right: -19px;
 }
 
 .carousel-indicators-top li {
@@ -1387,7 +1444,7 @@ span.product_ovrlay_cart
 
 .carousel.vertical .item {
     left: 0;
-}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â¹
+}
 
 /*Overwriten Bootstrap Classis*/
 .small-thumbnail {
@@ -1395,8 +1452,8 @@ span.product_ovrlay_cart
   padding: 4px;
   margin-bottom: 1px;
   line-height: 1.428571429;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  /*background-color: #ffffff;*/
+  /*border: 1px solid #dddddd;*/
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
@@ -1465,7 +1522,8 @@ a.left.carousel-control-ver{
     color: white;
     font-size: 14px;
         margin-top: 2.5%;
-    margin-right: 3%;
+    margin-right: 3.5%;
+    cursor:pointer;
 }
 
 h4.faq_hd{
@@ -1486,6 +1544,7 @@ p.faq_ineer_cont{
 .faq_conten{
      color:#a7a7a7;
     font-size: 16px;
+    margin-bottom: 2em;
 }
 
 p.faq_inner1{
@@ -1531,24 +1590,91 @@ img.product_box_slide_out{
 }
 
 .product_box{
-    padding: 4em 2em 2em 4em;
+    padding: 0em 2em 2em 4em;
         height: 19em;
     overflow: auto;
 }
 
-.product_box_1, .product_box_2{
-       border: 1px solid #413d3d;
+.product_box_1, .product_box_2, .product_box_3, .product_box_4, .product_box_5, .product_box_6, .product_box_7
+, .product_box_8, .product_box_9, .product_box_10, .product_box_11, .product_box_12{
+       border:1px solid #998989;
     background: white;
     margin-top: 29px;
     margin-bottom: 21px;
+    padding: 1em;
 }
 
+p.product_box_elemnt1{
+    color: #989797;
+    font-size: 18px;
+    margin-left: 6px;
+        position: relative;
+    top: 5px;
+}
 .product_box_footer{
-   padding: 13px 4px 3px 4px;
-    background: white;
-    font-size: 14px;
-    color: #868686;
+   padding: 7px 12px 14px 4.3em;
+   background: white;
+   font-size: 14px;
+   color: #868686;
+   width: 248px;
+   height: 48px;
+   /*background-color: #46becc;*/
+   color: white;
+   /*font-size: 14px;*/
+   margin-top: -4.5%;
+   /*margin-right: 3.5%;*/
+   cursor:pointer;
 }
-.product_box_1, .product_box_2, .product_box_3, .product_box_4{
+
+.product_box_1, .product_box_2, .product_box_3, .product_box_4, .product_box_5, .product_box_6, .product_box_7
+, .product_box_8, .product_box_9, .product_box_10, .product_box_11, .product_box_12{
     display: none;
+    width: 158px;
+    height: 103px;
 }
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+    top:3.4em;
+}
+
+.survey_main_box
+{
+       display: none;
+    background: white;
+    margin-left: 5%;
+    top: 0;
+    position: fixed;
+}
+.button_faq_compare_page{
+width: 162px;
+    height: 36px;
+    background-color: #46becc;
+    color: white;
+    font-size: 14px;
+}
+
+span.faq_comapr_now_butn.source_bold {
+    margin-left: 2em;
+    position: relative;
+    top: 11px;
+    }
+
+    img.slide_out_product1, img.slide_out_product2, img.slide_out_product3, img.slide_out_product4, 
+    img.slide_out_product5, img.slide_out_product6, img.slide_out_product7, img.slide_out_product8,
+    img.slide_out_product9, img.slide_out_product10, img.slide_out_product11, img.slide_out_product12{
+        width: 15px;
+    height: 15px;
+    position: relative;
+    left: 8em;
+    top: -6em;
+    cursor: pointer;
+    }
+
+/**/    a.handle{
+        background: url('images/shop/next.png') no-repeat !important;
+        background-color: red !important;
+            width: 41px !important;
+    height: 40px !important;
+       
+
+    }

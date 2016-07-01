@@ -775,7 +775,8 @@ textarea.contact_textarea {
     resize: none;
     outline: none;
     margin-top: 4%;
-    margin-left: 3px;
+    /*margin-left: 3px;*/
+    width: 100%;
     background: #ededed;
     border-color: transparent;
 }
@@ -1670,11 +1671,11 @@ span.faq_comapr_now_butn.source_bold {
     cursor: pointer;
     }
 
-/**/    a.handle{
+ /*  a.handle{
         background: url('images/shop/next.png') no-repeat !important;
         background-color: red !important;
             width: 41px !important;
     height: 40px !important;
        
 
-    }
+    }*/
